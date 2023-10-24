@@ -56,12 +56,12 @@ public final class Studant extends PersonAbstract {
 	}
 
 	public Boolean approved(Float average) {
-		return (average >= 6) ? true : false;
+		return (average >= 6) ? "Aluno Aprovado!" : "Aluno Reprovado!";
 	}
 
 	@Override
 	public String toString() {
-		return "Alunos [Nome: 	" + getName() + ", Curso: " + getCourse() + ", Primeira nota: " + getPrimaryNote()
+		return "Alunos [ Nome: " + getName() + ", Curso: " + getCourse() + ", Primeira nota: " + getPrimaryNote()
 				+ ",  Segunda nota: " + getSecundaryNote();
 	}
 
