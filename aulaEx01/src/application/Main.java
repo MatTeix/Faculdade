@@ -42,8 +42,7 @@ public class Main {
 		for(int i = 0; i < studant.length; i++) {
 			Float average = studant[i].average(studant[i].getPrimaryNote(), studant[i].getSecundaryNote()); 
 			System.out.println("\nNota " + (i+1) + ("* Aluno" + average));
-			Boolean approved = studant[i].approved(average);
-			System.out.println("Aluno aprovado? " + approved);
+			System.out.println(studant[i].approved(average));
 		}
 		
 		// toString
